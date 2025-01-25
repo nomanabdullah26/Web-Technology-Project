@@ -1,0 +1,22 @@
+[
+    {
+        "P_ID": 101,
+        "P_name": "Alice Brown",
+        "blood_group": "O+",
+        "age": 30,
+        "gender": "Female",
+        "medical_history": "No significant medical history.",
+        "prescriptions": "Multivitamins",
+        "ongoing_treatments": "None"
+    },
+    {
+        "P_ID": 102,
+        "P_name": "Bob Green",
+        "blood_group": "A-",
+        "age": 45,
+        "gender": "Male",
+        "medical_history": "History of hypertension.",
+        "prescriptions": "Atenolol",
+        "ongoing_treatments": "Blood pressure monitoring"
+    }
+]

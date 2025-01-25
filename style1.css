@@ -1,0 +1,106 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the body and HTML span the full viewport height */
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+/* Wrapper to Maintain Layout */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top */
+    min-height: 100vh; /* Full height of the viewport */
+    position: relative; /* Relative positioning for the back-to-home button */
+    padding-bottom: 60px; /* Space for the button */
+}
+
+/* Header Section */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Login and Sign-Up Form Styles */
+.logindoc, .signin {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.logindoc label, .signin label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.logindoc input[type="text"],
+.logindoc input[type="password"],
+.signin input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.logindoc input[type="submit"],
+.signin input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logindoc input[type="submit"]:hover,
+.signin input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Error Message */
+span {
+    font-size: 14px;
+    color: red;
+}
+
+/* Sign-Up Section */
+.signin {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+/* Back to Home Button Styles */
+.button-container {
+    position: absolute; /* Position relative to the wrapper */
+    bottom: 20px; /* 20px from the bottom */
+    left: 50%; /* Start at the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.button-link {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "name": "Dr. nafisa",
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "mosammat",
+        "availability": [
+            "today"
+        ]
+    }
+]

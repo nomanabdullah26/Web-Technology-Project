@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9fc; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: flex-start;  /* Align content to the top */
+    height: 100vh;  /* Full viewport height */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Header (Title) */
+h2 {
+    font-size: 22px;
+    color: #00aaff; /* Light blue accent for the header */
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+}
+
+/* Table Container */
+table {
+    width: 80%;  /* 80% of the viewport width */
+    max-width: 900px;  /* Max width for large screens */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headers */
+th {
+    background-color: #00aaff; /* Light blue background for headers */
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Table Rows */
+td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: #f1faff; /* Light hover effect */
+}
+
+/* Link Button (Back to Home) */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    align-self: center; /* Center the button */
+}
+
+/* Link Button Hover Effect */
+a:hover {
+    background-color: #0099cc; /* Slightly darker blue */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        width: 90%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

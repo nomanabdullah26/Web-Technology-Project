@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9fc;
+    margin: 0;
+    padding: 20px; /* Added padding for spacing */
+    color: #333;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center-align text inside child elements */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center container */
+    text-align: center; /* Align text within container */
+}
+
+/* Back to Home Button */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 20px; /* Ensure spacing */
+    align-self: center; /* Center the button */
+}
+
+a:hover {
+    background-color: #0099cc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Other styles */
+h2 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    text-align: center; /* Center-align labels */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0099cc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+input[type="submit"][name="delete"] {
+    background-color: #f44336;
+    margin-top: 15px;
+}
+
+input[type="submit"][name="delete"]:hover {
+    background-color: #d32f2f;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.no-doctor {
+    color: #f44336;
+    font-size: 18px;
+    font-weight: bold;
+}

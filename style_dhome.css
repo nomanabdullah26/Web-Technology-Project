@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9fc; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100vh;  /* Full viewport height */
+}
+
+/* Header (User Info - Top-left corner) */
+h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    color: #00aaff; /* Light blue accent for the header */
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+}
+
+/* Centered Buttons Container */
+.button-container {
+    display: flex;
+    flex-direction: column;  /* Stack buttons vertically */
+    align-items: center;  /* Center the buttons horizontally */
+    justify-content: flex-start;  /* Align content to the top */
+    gap: 25px;  /* Add space between buttons */
+    text-align: center;
+    width: 100%;
+    max-width: 450px; /* Limit the width of the container */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for form */
+}
+
+/* Form Buttons */
+form {
+    text-align: center;
+    width: 100%;  /* Full width of the button container */
+    padding: 20px;
+}
+
+/* Label Styling */
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Submit Button Styles */
+form input[type="submit"] {
+    background-color: #00aaff; /* Light blue button color */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0099cc; /* Slightly darker blue */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Logout Button (Red Style) */
+.Dlogout input[type="submit"] {
+    background-color: #f44336; /* Red button */
+}
+
+.Dlogout input[type="submit"]:hover {
+    background-color: #d32f2f; /* Slightly darker red */
+}
+
+/* Add Rounded Border to Container */
+.button-container {
+    border: 1px solid #e1e9f0;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+form input[type="submit"][name="logout"] {
+    background-color: #f44336; /* Red button */
+}
+
+form input[type="submit"][name="logout"]:hover {
+    background-color: #d32f2f; /* Slightly darker red */
+}
+
+@media (max-width: 600px) {
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .button-container {
+        padding: 20px;
+        width: 80%; 
+        max-width: 400px; 
+    }
+
+    form {
+        padding: 15px;
+    }
+}

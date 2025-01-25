@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.loginPatient, .signin {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.loginPatient label, .signin label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.loginPatient input[type="text"],
+.loginPatient input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.loginPatient input[type="text"]:focus,
+.loginPatient input[type="password"]:focus {
+    border-color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.loginPatient input[type="submit"],
+.signin input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.loginPatient input[type="submit"]:hover,
+.signin input[type="submit"]:hover {
+    background-color: #555;
+}
+
+span {
+    font-size: 14px;
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
+.signin {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
